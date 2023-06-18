@@ -67,12 +67,19 @@ h1, h2, h3, h4, h5 {
 
 /* Header */
 header {
-  position: relative;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 5;
+  z-index: 200;
+  border-bottom: 2px solid #ddd;
+  transition: transform .5s linear;
 }
+
+.hide_filters {
+  transform: translateY(-200%);
+}
+
 
 header .navbar-brand {
   text-transform: uppercase;
@@ -927,4 +934,36 @@ header .navbar .cta-btn a:hover {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px;
   }
+}
+
+.logo_top {
+  width: 30px;
+  margin-right: 8px;
+  vertical-align: text-top;
+}
+
+.wid {
+	width: 25%;
+  padding-left: 5px!important;
+  padding-right: 5px!important;
+  padding-top: 5px;  
+}
+
+.wid a, .wid_card a {
+  box-shadow: 0 0 5px #ddd;
+  border: 1px solid #ddd;
+  padding: 4px;
+  height: 100%;
+}
+.wid_card {
+  width: 50%;
+  padding-left: 5px!important;
+  padding-right: 5px!important;
+  padding-top: 5px;  
+}
+
+.card_brand {
+  font-size: 14px;
+  margin: 8px 6px 6px 6px;
+  line-height: 1.42857143;
 }

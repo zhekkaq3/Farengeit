@@ -159,3 +159,25 @@
 
 
 })(jQuery);
+
+document.addEventListener('DOMContentLoaded', function() { 
+
+	const navFilters = document.querySelector('.header')
+
+	const scrollPosition = () => window.pageYOffset || document.documentElement.scrollTop;
+	const containHide = () => navFilters.classList.contains('hide_filters');
+
+	let lastScroll = 0;
+
+	window.addEventListener('scroll', () => {
+		if (scrollPosition() > lastScroll && !containHide() && scrollPosition() > 130) {
+			navFilters.classList.add('hide_filters')
+			
+		} else if (scrollPosition() < lastScroll && containHide()) {
+			navFilters.classList.remove('hide_filters')
+			
+		}
+
+		lastScroll = Math.max(scrollPosition(), 0) ;
+	});
+});
