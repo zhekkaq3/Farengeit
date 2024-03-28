@@ -181,3 +181,17 @@ document.addEventListener('DOMContentLoaded', function() {
 		lastScroll = Math.max(scrollPosition(), 0) ;
 	});
 });
+
+$('#exampleModal').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget) 
+
+  var tittle = button.data('tittle') 
+  var content = button.find('.content-pop').clone(true)
+
+  var text = button.data('text')
+
+  var modal = $(this)
+
+  modal.find('.modal-title').text(tittle)
+  modal.find('.content-pop').replaceWith(content)
+})

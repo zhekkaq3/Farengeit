@@ -64,6 +64,9 @@ h1, h2, h3, h4, h5 {
   background: #fff;
   color: #000;
 }
+.btn {
+  white-space: wrap;
+}
 
 /* Header */
 header {
@@ -966,4 +969,107 @@ header .navbar .cta-btn a:hover {
   font-size: 14px;
   margin: 8px 6px 6px 6px;
   line-height: 1.42857143;
+}
+
+.wid-catalog{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100px;
+  
+  padding: 4px;
+  height: 100%;
+  min-height: 145px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.wid-catalog > div{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 5px #ddd;
+  border: 1px solid #ddd;
+  padding: 2px;
+  border-radius: 8px;
+}
+
+.wid-catalog button{
+  flex-grow: 1;
+  background-color: rgb(240, 240, 240)!important;
+  border-color:rgb(240, 240, 220)!important;
+  cursor: pointer;
+}
+
+.wid-catalog button:hover{
+  background-color: rgb(220, 220, 220)!important;
+  border-color:rgb(220, 220, 220)!important;
+}
+.wid-catalog button:visited, .wid-catalog button:active{
+  background-color: rgb(240, 240, 240)!important;
+  border-color:rgb(220, 220, 220)!important;
+
+
+}
+
+.content-pop {
+  display: none;
+}
+
+.content-pop ul{
+ width: 50%;
+ padding-bottom:8px;
+ padding-top: 8px;
+ box-shadow: 0 0 5px #ddd;
+}
+ul h4{
+  border-bottom: 1px solid #e9ecef;
+  min-height: 36px;
+}
+
+.modal-body .content-pop {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.modal-title {
+  font-size: 1.7rem;
+}
+
+
+.owl-carousel.home-slider .slider-item .slider-text h1, .owl-carousel.home-slider .slider-item .slider-text p{
+  color: #000;
+}
+
+.ion-chevron-left, .ion-chevron-right{
+  color: #000;
+}
+.fon {
+  background-color: rgba(240, 240, 240, 75%);
+  height: 150px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-fluid_work{
+  padding: 4px;
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.row_footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.row_footer > div{
+  padding-bottom: 16px;
+}
+.mrl-a {
+  margin-left: auto;
 }
